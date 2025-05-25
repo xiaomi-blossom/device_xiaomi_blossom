@@ -531,3 +531,9 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/blossom/blossom-vendor.mk)
+
+# BCR
+$(call inherit-product, vendor/bcr/bcr.mk)
+
+# Viper4fx
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
