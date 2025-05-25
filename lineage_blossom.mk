@@ -15,10 +15,14 @@ $(call inherit-product, device/xiaomi/blossom/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+$(call inherit-product, vendor/lineage/config/BoardConfigReservedSize.mk)
+
 scr_resolution := 720
-TARGET_SUPPORTS_BLUR := true
-TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 720
+HORIZON_MAINTAINER := AsTechpro20 x kAiF
+TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GMS := true
+WITH_GMS_VARIANT := core
 
 PRODUCT_NAME := lineage_blossom
 PRODUCT_DEVICE := blossom
